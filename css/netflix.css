@@ -1,0 +1,332 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.background{
+    height: 510px;
+    width: 100%;
+    background-image: url(../img/IN-en-20230918-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width:600px){
+    .background{
+        height: 470px;
+    }
+}
+@media (min-width:960px){
+    .background{
+        height: 700px;
+    }
+}
+.navbar{
+    padding: 0 3vw;
+    width: 100%;
+    height: 14%;
+}
+@media (min-width:1280px){
+    .navbar{
+        padding: 0 11vw;
+    }
+}
+.logo{
+    max-height: 60%;
+}
+.lang{
+    margin-right: 20px;
+    width: 100px;
+    text-align: center;
+    background-color: gray;
+    color: #fff;
+    height: 30px;
+}
+.login{
+    width: 70px;
+    height: 30px;
+    color: #fff;
+    background-color: #e50914;
+    border: 1px solid;
+    border-radius: 3px;
+}
+@media (max-width: 600px){
+    .lang{
+        margin-right: 10px;
+        width: 50px;
+    }
+}
+.main{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+ h1{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 800;
+    padding-bottom: 10px;
+}
+ p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+@media (min-width:960px){
+     h1{
+        font-size: 45px;
+        font-weight: 800;
+    }
+     p{
+        font-size: 25px;
+        font-weight: 500;
+    }
+}
+@media (max-width:600px){
+    .main h1{
+        padding: 0 10px;
+    }
+}
+.email{
+    width: 80%;
+    height: 20%;
+}
+.main .email p{
+    font-size: 18px;
+    font-weight: 500;
+}
+@media(min-width: 960px){
+    .email{
+        width: 100%;
+    }
+    .main .email p{
+        font-size: 22px;
+    }
+}
+@media (max-width:600px){
+    .email{
+        height: 45%;
+    }
+}
+.email input{
+    width: 45%;
+    height: 55px;
+    background-color: transparent;
+}
+.email button{
+    color: #fff;
+    background-color: #e50914;
+    width: 30%;
+    height: 55px;
+}
+#emailErr{
+    color: #e45656;
+    font-size: 18px;
+    display: block;
+}
+@media(min-width:960px){
+    .email input{
+        width: 420px;
+    }
+    .email button{
+        width: 220px;
+    }
+}
+@media(max-width:600px){
+    .email input{
+        width: 100%;
+    }
+    .email button{
+        width: 40%;
+        margin-top: 13px;
+    }
+}
+.sec{
+    width: 100%;
+    padding: 25px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.end{
+    display: flex;
+    flex-direction: column-reverse;
+}
+@media(min-width:960px){
+    .sec{
+       height: 520px;
+       flex-direction: row;
+    }
+}
+@media(min-width:1280px){
+    .sec{
+        
+    }
+}
+.sec-left{
+    padding-top: 25px;
+    width:  90%;
+    height: 130px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.sec-right{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.sec-right img{
+    width: 100%;
+}
+@media(min-width:960px){
+    .sec-left{
+        width: 47%;
+        text-align: start;
+    }
+    .sec-right{
+        width: 47%;
+    }
+}
+@media (min-width:1280px){
+    .sec-left{
+        width: 40%;
+    }
+    .sec-right{
+        max-width: 40%;
+    }
+}
+.sec-right video{
+    z-index: 2 ;
+    overflow: hidden;
+    position: absolute;
+    width: 73%;
+    top: 21%;
+    left: 13%;
+}
+.device-video{
+    z-index: 2 ;
+    overflow: hidden;
+    position: absolute;
+    width: 20%;
+    top: 21%;
+    left: 13%;
+}
+.bar{
+    height: 8px;
+    background-color: #232323;
+}
+
+.questions{
+    height: 600px;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.question-bar{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+}
+ul {
+    list-style-type: none; /* Remove bullets from unordered list */
+  }
+  li{
+    width: 95%;
+    margin-bottom: 10px;
+  }
+.click{
+    width: 95%;
+    height: 80px;
+    color: #fff;
+    background-color: transparent;
+    border: 0;
+    text-align: start;
+}
+.click:focus {
+    outline: none;
+}
+.close1{
+    padding-right: 20px ;
+    height: 80px;
+    font-size: 30px;
+    background-color: transparent;
+    border: 0;
+}
+.close1:focus {
+    outline: none;
+}
+.clickFn{
+    margin: 2px 0;
+    width: 100%;
+    padding: 20px 5px;
+    background-color: #232323;
+    display: none;
+    color: #fff;
+    text-align: start;
+}
+.finish{
+    width: 200px;
+    height: 55px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #e50914;
+    border: 0;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+footer{
+    height: 500px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    width: 90%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer h6{
+    width: 100%;
+    height: 40px;
+    color:#b3b3b3;
+    padding: 0 40px;
+}
+.footer li{
+    cursor: pointer;
+    text-decoration: underline;
+    float: left;
+    width: 40%;
+    height: 30px;
+    margin: 5px 5px;
+    font-size: 16px;
+    color: #b3b3b3;
+}
+@media(min-width:960px){
+    footer{
+        height: 400px;
+    }
+    .footer h6{
+        padding: 0 50px;
+    }
+    .footer li{
+        width: 22%;
+    }
+}
